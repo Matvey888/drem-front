@@ -213,36 +213,62 @@
                 <div class="modal__order-wrap">
                     <div class="modal__order-left">
                         <div class="modal__order-block-img">
-                            <img src="" alt="">
+                            
+                            <span class="modal__order-img-sale">10%</span>
+                            <div class="modal__order-img-rating">
+                                <span class="modal__order-img-rating-star"></span>
+                                <span class="modal__order-img-rating-count">4,5</span>
+                            </div>
+                            
+                            <img src="./assets/img/catalog/item1.png" alt="">
                         </div>
                         <h3 class="modal__order-title-product">
                             МАТРАС PROMTEX-ORIENT ERGOROLL 10
                         </h3>
-                        <p class="modal__order-text">
+                        <p class="modal__order-text-left">
                             Беспружинный матрас Promtex Orient ErgoRoll высотой 10 см целиком и полностью состоит из плиты искусственного латекса.
                         </p>
                         <div class="modal__order-filter">
+                            <label for="order-size" class="order-size__label">Размер</label>
+                            <select name="order-size" id="order-size" class="order-size__select">
+                                <option value="140x200">140x200</option>
+                                <option value="120x200">120x200</option>
+                            </select>
+                            <label for="order-height" class="order-height__label">Высота</label>
+                            <span>19 см</span>
                         </div>
-                        <div class="modal__order-price"></div>
+                        <div class="modal__order-price">
+                            <p>6 740 р.</p> <span>5 230 р.</span>
+                        </div>
                     </div>
                     <div class="modal__order-block-right">
                         <h3 class="modal__order-title">
                             Для оформления заказа теперь требуется всего 1 шаг!
                         </h3>
-                        <p class="modal__order-text">
+                        <p class="modal__order-text-right">
                             Введите своё имя, телефон и мы перезвоним Вам, для обсуждения деталей заказа!
                         </p>
-                        <form action="#" class="modal__order-form">
-                            <label for="order-name"></label>
-                            <input type="text" id="order-name" name="order-name">
-                            <label for="order-tel"></label>
-                            <input type="text" id="order-tel" name="order-tel">
+                        <form action="#" method="POST" class="modal__order-form">
+                            <div class="order-name-wrap">
+                                <input type="text" id="order-name" name="order-name" placeholder="Имя">
+                                <label for="order-name" class="order-name__label"></label>
+                            </div>
 
-                            <div class="captcha"></div>
-                            <label for="order-confirm">
-                                Я согласен с <a href="#" class="order-link">правилами публикации пользовательского контента</a> и даю согласие на обработку персональных данных
-                            </label>
-                            <input type="checkbox" id="order-confirm" name="order-confirm">
+                            <div class="order-tel-wrap">
+                                <input type="text" id="order-tel" name="order-tel" placeholder="Телефон">
+                                <label for="order-tel" class="order-tel__label"></label>
+                            </div>
+
+
+                            <div class="modal__order-captcha"></div>
+                            <div class="modal__order-form-confirm">
+                                <input type="checkbox" id="order-confirm" name="order-confirm">
+                                <label for="order-confirm" class="order-confirm-label">
+                                    Я согласен с <a href="#" class="order-link">правилами публикации пользовательского контента</a> и даю согласие на обработку персональных данных
+                                </label>
+                            </div>
+                            
+                            
                             <button type="submit" id="order-submit" class="modal__order-form-btn">Заказать звонок</button>
                         </form>
                     </div>

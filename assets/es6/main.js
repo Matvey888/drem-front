@@ -229,6 +229,18 @@
               let result = $("label[for='"+idRadio+"']").attr('title');
               $(".rating-value").text(result);
           });
+
+          $('.pay-click').on('click', function (e) {
+              e.preventDefault();
+            //   console.log('hi');
+              $('.modal__order').css('display', 'block');
+
+          });
+
+          $(document).on('click', '.close-modal', function () {
+            //   console.log();
+              $('.modal__order').css('display', 'none');
+          })
     });
 })(jQuery);
 
