@@ -1,0 +1,25 @@
+@import url('../fonts/Roboto/stylesheet.css');
+@import url('../fonts/MuseoModerno/stylesheet.css');
+
+$roboto: 'Roboto';
+$moder: 'MuseoModerno';
+
+
+@mixin font-family($font) {
+	font-family: $font, sans-serif;
+}
+
+
+@mixin robot($weight:400, $style:normal) {
+	@include font-family ($roboto);
+	font-weight: $weight;
+	font-style: $style;
+}
+
+@mixin moderno($weight:400, $style:normal) {
+	@include font-family ($moder);
+	font-weight: $weight;
+	font-style: $style;
+}
+// @include robot(400);  // Использование шрифтов
+// @include moderno(400);  // Использование шрифтов
