@@ -1,0 +1,131 @@
+.ordering {
+  //
+
+  &__wrap {
+    border-top: 2px solid #2B587A;
+    padding-top: 50px;
+  }
+
+  &__title {
+    @include robot(500);
+    font-size: 24px;
+    line-height: 28px;
+    color: #2B587A;
+    margin-bottom: 24px;
+  }
+
+  &__form {
+    // display: flex;
+  }
+
+  & .block-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    max-height: 50px;
+    background: linear-gradient(0deg, #F9F9F9, #F9F9F9), #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  & .block-top__num {
+    @include robot(400);
+    font-size: 16px;
+    line-height: 140%;
+    color: #2B587A;
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), #F9F9F9;
+    border: 1px solid #E9E9E9;
+    box-sizing: border-box;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  & .block-top__title {
+    @include robot(700);
+    font-size: 16px;
+    line-height: 140%;
+    color: #2B587A;
+    margin-left: 17px;
+  }
+
+  & .block-top__btn-toggle {
+    position: relative;
+    margin-left: auto;
+    margin-right: 22px;
+    width: 14px;
+    height: 8px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 7px;
+      top: 0px;
+      left: 4px;
+      background-color: #686868;
+      cursor: pointer;
+      pointer-events: none;
+      border-radius: 2px;
+      transform: rotate(230deg);
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 2px;
+      height: 7px;
+      top: 0px;
+      right: 3px;
+      background-color: #686868;
+      cursor: pointer;
+      pointer-events: none;
+      border-radius: 2px;
+      transform: rotate(130deg);
+    }
+
+  }
+
+  &__form-left {
+    max-width: 760px;  
+  }
+
+  & .your-data__bottom {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  & .your-data__inputs {
+    display: flex;
+    flex-direction: column;
+
+    & input {
+      @include robot(400);
+      font-size: 14px;
+      line-height: 260%;
+      color: #222222;
+      width: 370px;
+      height: 40px;
+      max-width: 370px;
+      max-height: 40px;
+      background-color: #f9f9f9;
+      border: 1px solid #DADADA;
+      box-sizing: border-box;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding-left: 44px;
+
+      &::placeholder {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
