@@ -84,6 +84,8 @@
                 </div>
             </div>
 
+            <?php if($_SERVER['REQUEST_URI'] != '/ordering.php') { ?>
+
             <nav class="header__menu menu">
                 <ul class="menu__list">
                     <li class="menu__item open-menu one">
@@ -563,5 +565,6 @@
 
                 </div>
             </div>
+            <?php } ?>
         </div>
     </header>

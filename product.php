@@ -172,7 +172,7 @@
                      </div>
                   </div>
                   <div class="product__add">
-                     <a href="#" class="product__add-btn">Добавить в Корзину</a>
+                     <a href="/ordering.php" class="product__add-btn">Добавить в Корзину</a>
                      <div class="product__add-pay">
                         <a href="#" class="pay-click">Купить в один клик</a>
                         <a href="#" class="pay-credit">Оформить рассрочку</a>
